@@ -1,4 +1,4 @@
-# Laborat-rio-
+# Laboratorio
 ESTE REPOSITÓRIO TERÁ SOMENTE OS TEXTOS E PDFS.
 SEJAM BEM-VINDOS(AS)
 ## laboratório
