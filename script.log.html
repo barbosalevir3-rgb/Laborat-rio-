@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Div e Span</title>
+  <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+  <div style="border-bottom: 3px solid hwb(32 0% 11%);">
+    <img src="luffy.jpg" width="100" alt="logo">
+    <span style="color: lab(0% 0 0);">
+      Laboratório de Pesquisa
+    </span>
+  </div>
+
+  <main>
+    <h2>Introdução à Lógica de Programação</h2>
+    
+    <h3>O que é Lógica de Programação?</h3>
+    <p>Quando você ouve falar sobre esse tema, o primeiro pensamento costuma ser: “Será que vou ter que aprender a pensar como um computador?”</p>
+    <p>No fundo, a lógica é exatamente isso: a arte de quebrar grandes problemas em etapas simples, claras e organizadas. É através desse método que o estudante estrutura seu pensamento para encarar e resolver os primeiros desafios práticos do curso.</p>
+    
+    <p><strong>Ex:</strong> faça um algoritmo que peça para o usuário digitar seu nome e sua idade. Como você resolveria isso? Antes de escrever qualquer código, vamos pensar no problema:</p>
+    
+    <ol>
+      <li>Precisamos pedir o nome do usuário.</li>
+      <li>Depois, precisamos pedir a idade.</li>
+      <li>Por fim, precisamos exibir essas informações.</li>
+    </ol>
+
+    <p>
+      <strong>INÍCIO</strong><br>
+      Leia o nome do usuário.<br>
+      Leia a idade do usuário.<br>
+      Exiba o nome e a idade.<br>
+      <strong>FIM</strong>
+    </p>
+
+    <p>Caro estudante, agora você vai entender o que é uma variável, como atribuir um valor a ela e como organizar o pensamento para transformar esse algoritmo em código. Uma variável é um espaço na memória usado pelo programa para guardar uma informação que poderá ser utilizada posteriormente. No nosso problema, temos duas informações:</p>
+    
+    <ul>
+      <li>nome “Carlos”</li>
+      <li>idade 18</li>
+    </ul>
+
+    <p>Por que precisamos de uma variável nesse problema? Porque o programa precisa guardar o nome e a idade que recebeu para poder utilizá-los depois.</p>
+
+    <pre><code>let nome = "Carlos";
+let idade = 18;</code></pre>
+
+    <p>A primeira linha não lê o nome do usuário; ela atribui “Carlos” diretamente à variável nome. A segunda linha atribui o valor 18 diretamente à variável idade. Veja bem, existem maneiras de resolver esse problema. Esta é uma forma de iniciar, escolhida para que você compreenda como utilizar uma variável. Pense, existem diferentes maneiras de resolver esse problema. Esta é apenas uma forma de iniciar.</p>
+
+    <p>Agora, você está preparado para aprender uma nova maneira de pensar? O mais importante é você entender a diferença entre: <code>Const</code>, <code>Let</code> e <code>var</code>. Agora você está preparado para aprender um novo poder? Vamos nessa, vamos chegar ao tesouro!</p>
+
+    <p>O <code>let</code> é utilizado quando criamos uma variável cujo valor pode ser alterado durante a execução do programa. Para exemplificar, imagine a sua idade: você informa ao algoritmo quantos anos tem hoje, mas, um mês depois, você faz aniversário.</p>
+
+    <p>Nesse cenário, o valor da sua idade muda no decorrer do tempo — e é exatamente para guardar esse tipo 
+de informação mutável que usamos o let. Enquanto o let aceita mudanças, o const (abreviação de 
+constante) é usado para criar variáveis cujo valor nunca muda depois de ser definido pela primeira vez. Se 
+você tentar alterar o valor de um const, o programa retornará um erro. Para contrastar com o exemplo da 
+idade, podemos usar o ano de nascimento ou o CPF. Você faz aniversário e sua idade muda (let), mas o 
+ano em que você nasceu permanece exatamente o mesmo para sempre (const). O var foi a forma original 
+de declarar variáveis no JavaScript desde o surgimento da linguagem. No entanto, com a evolução da 
+tecnologia, ele caiu em desuso por conta de comportamentos imprevisíveis que geravam muitos bugs no 
+código. A principal diferença é que o var possui escopo abrangente (global ou de função) e permite que 
+uma variável seja declarada novamente sem emitir alerta de erro, diferente do let e do const que 
+respeitam o escopo de bloco (como o interior de uma estrutura if ou for).</p>
+
+    <h4>Olhe o exemplo abaixo:</h4>
+    
+<pre><code>let nome = prompt("Digite seu nome");
+let idade = prompt("Informe a sua idade");
+console.log(`Seu nome é ${nome}, você tem ${idade} anos de idade`);</code></pre>
+
+  </main>
+</body>
+</html>
