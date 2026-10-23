@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Div e Span</title>
+  <link rel = "stylesheet" href = "css/estilo.css"
+</head>
+<body>
+    <!-- Cabeçalho / Topo -->
+  <div style="border-bottom: 3px solid black; padding-bottom: 10px; margin-bottom: 20px;">
+    <img src="cat.jpg" width="100" alt="logo">
+    <span style="color: #011cc5; font-weight: bold; margin-left: 10px;">
+      Condicionais if/else
+    </span>
+  </div>
+  <main>
+    <h2>Vamos Estudar If/Else</h2>
+
+    <h3>O que são Tomadas de Decisão?</h3>
+      <p>Na vida real, tomamos decisões o tempo todo baseadas em condições. Por exemplo: <em>“Se estiver chovendo, levo um guarda-chuva; senão, vou de boné”</em>. Na programação, a lógica é exatamente a mesma!</p>
+    
+    <p>Para isso, utilizamos o <code>if</code> (se) e o <code>else</code> (senão). Eles permitem que o computador execute caminhos diferentes no código dependendo do resultado de uma condição.</p>
+
+    <h3>Como funciona na prática?</h3>
+    <p>Imagine que queremos verificar se um usuário é maior de idade para entrar em um evento:</p>
+
+    <pre><code>let idade = prompt("Qual é a sua idade?");
+
+if (idade >= 18) {
+  console.log("Acesso permitido! Você é maior de idade.");
+} else {
+  console.log("Acesso negado! Você é menor de idade.");
+}</code></pre>
+
+       <h3>Entendendo o Código:</h3>
+    <ul>
+      <li><strong><code>if (idade >= 18)</code>:</strong> O programa testa se a idade digitada é maior ou igual a 18.</li>
+      <li><strong>Bloco do <code>if</code>:</strong> Se a condição for verdadeira (<em>true</em>), o código entre as chaves `{}` do `if` será executado.</li>
+      <li><strong><code>else</code>:</strong> Se a condição for falsa (<em>false</em>), o programa pula o `if` e executa o código que está dentro do `else`.</li>
+    </ul>
+
+    <p>Com essa estrutura, seu programa deixa de ser uma sequência engessada de passos e passa a reagir às informações que recebe!</p>
+
+    <!-- Área de Encerramento e Navegação -->
+    <hr style="margin: 30px 0; border: 0; border-top: 1px solid #ccc;">
+
+    <div style="background-color: #f0f4f8; padding: 15px; border-left: 4px solid #011cc5; border-radius: 4px; margin-bottom: 20px;">
+      <p style="margin: 0; font-weight: bold;">🎉 Fim do Módulo 2!</p>
+      <p style="margin: 5px 0 0 0; font-size: 0.95em;">Agora você já sabe como fazer seu programa tomar decisões simples!</p>
+    </div>
+
+    <!-- Links para navegar entre as aulas -->
+    <div style="display: flex; justify-content: space-between; margin-top: 20px;">
+      <a href="modulo1-variaveis.html" style="color: #555; text-decoration: none;">◄ Módulo 1 (Variáveis)</a>
+      <a href="modulo3-funcoes.html" style="color: #011cc5; text-decoration: none; font-weight: bold;">Módulo 3 (Próximo) ►</a>
+    </div>
+  </main>
+</body>
+</html>
