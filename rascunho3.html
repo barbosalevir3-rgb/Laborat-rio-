@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Módulo 3: Laços de Repetição</title>
+  <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+  <!-- Cabeçalho / Topo -->
+  <div style="border-bottom: 3px solid black; padding-bottom: 10px; margin-bottom: 20px;">
+    <img src="cat.jpg" width="100" alt="logo">
+    <span style="color: #011cc5; font-weight: bold; margin-left: 10px;">
+      Laços de Repetição (Loops)
+    </span>
+  </div>
+
+  <main>
+    <h2>O que é um Loop? (Uma Analogia Simples)</h2>
+
+    <p>Pense num treino de futebol ou numa aula de educação física: quando o professor diz <em>"Dê 5 voltas no campo!"</em>, você não precisa de perguntar 5 vezes o que fazer. Você simplesmente corre uma volta, conta na sua cabeça, e repete a ação até completar as 5 voltas.</p>
+    
+    <p>Na programação, um <strong>Loop (ou Laço de Repetição)</strong> serve exatamente para isso: diz ao computador para repetir um bloco de código várias vezes sem que precise de o escrever repetidamente.</p>
+
+    <hr style="margin: 20px 0; border: 0; border-top: 1px dashed #ccc;">
+
+    <h3>1. O Laço <code>while</code> (Enquanto)</h3>
+    <p>O <code>while</code> funciona como uma instrução de rotina: <strong>enquanto</strong> uma condição for verdadeira, o computador continua a fazer a tarefa.</p>
+
+    <p><strong>Exemplo da vida real:</strong> <em>Enquanto houver loiça na pia, continue a lavar.</em></p>
+
+    <pre><code>let voltas = 1;
+
+// Enquanto as voltas forem menores ou iguais a 3, continue a correr!
+while (voltas <= 3) {
+  console.log(`Você completou a volta ${voltas}!`);
+  voltas++; // Soma +1 ao número de voltas
+}
+
+console.log("Fim do treino!");</code></pre>
+
+    <h4>O que acontece passo a passo?</h4>
+    <ol>
+      <li>Começamos com <code>voltas = 1</code>.</li>
+      <li>O programa testa: <em>1 é menor ou igual a 3?</em> <strong>Sim!</strong> Escreve no ecrã e soma +1.</li>
+      <li>Agora <code>voltas = 2</code>. Testa novamente: <em>2 é menor ou igual a 3?</em> <strong>Sim!</strong> Escreve e soma +1.</li>
+      <li>Agora <code>voltas = 3</code>. <em>3 é menor ou igual a 3?</em> <strong>Sim!</strong> Escreve e soma +1.</li>
+      <li>Agora <code>voltas = 4</code>. <em>4 é menor ou igual a 3?</em> <strong>Não!</strong> O loop para e o programa segue em frente.</li>
+    </ol>
+
+    <div style="background-color: #fff3cd; padding: 10px; border-left: 4px solid #ffc107; margin: 15px 0;">
+      <strong>⚠️ Cuidado com o Loop Infinito!</strong><br>
+      Se esquecer da linha <code>voltas++</code>, o número de voltas nunca vai aumentar. O programa ficará preso a correr para sempre!
+    </div>
+
+    <hr style="margin: 20px 0; border: 0; border-top: 1px dashed #ccc;">
+
+    <h3>2. O Laço <code>for</code> (Para)</h3>
+    <p>O <code>for</code> é uma forma mais organizada e compacta de escrever um loop quando já sabe **exatamente quantas vezes** quer repetir a ação.</p>
+
+    <pre><code>//  (Início ;  Condição ; Incremento)
+for (let i = 1; i <= 3; i++) {
+  console.log(`Contando o número: ${i}`);
+}</code></pre>
+
+    <h4>Desmontando as 3 partes do <code>for</code>:</h4>
+    <ul>
+      <li><strong><code>let i = 1</code> (Início):</strong> Cria a variável contadora com o valor inicial.</li>
+      <li><strong><code>i <= 3</code> (Condição):</strong> A regra que autoriza o loop a continuar rodando.</li>
+      <li><strong><code>i++</code> (Passo):</strong> O que acontece ao final de cada volta (soma 1 na variável <code>i</code>).</li>
+    </ul>
+
+    <!-- Área de Encerramento e Navegação -->
+    <hr style="margin: 30px 0; border: 0; border-top: 1px solid #ccc;">
+
+    <div style="background-color: #f0f4f8; padding: 15px; border-left: 4px solid #011cc5; border-radius: 4px; margin-bottom: 20px;">
+      <p style="margin: 0; font-weight: bold;">🎉 Parabéns! Você concluiu o Módulo 3!</p>
+      <p style="margin: 5px 0 0 0; font-size: 0.95em;">Com Variáveis, Condicionais e Loops, você já consegue criar programas interativos completos!</p>
+    </div>
+
+    <!-- Links para navegar entre as aulas -->
+    <div style="display: flex; justify-content: space-between; margin-top: 20px;">
+      <a href="modulo2-condicionais.html" style="color: #555; text-decoration: none;">◄ Módulo 2 (Condicionais)</a>
+      <a href="modulo4-funcoes.html" style="color: #011cc5; text-decoration: none; font-weight: bold;">Módulo 4 (Funções) ►</a>
+    </div>
+  </main>
+</body>
+</html>
