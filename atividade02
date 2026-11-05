@@ -1,0 +1,85 @@
+import React from 'react';
+import{StyleSheet, Text, View, TextInput, TouchableOpacity} from 'react-native';
+
+export default function App(){
+  return(
+    <View style={styles.container}>
+    <Text style={styles.titulo}>Criar Nova Conta</Text>
+
+  <Text style={styles.rotulo}>Nome Completo:</Text>
+  <TextInput
+  style={styles.campo}
+  placeholder="Ex: João Silva"
+  />
+
+  <Text style={styles.rotulo}>E-mail:</Text>
+  <TextInput
+  style={styles.campo}
+  placeholder = "joao@ifam.edu.br"
+  keyboardType = "email-address"
+  />
+
+   <Text style={styles.rotulo}>Cidade:</Text>
+  <TextInput
+  style={styles.campo}
+  placeholder = "Boca do Acre"
+  />
+
+   <Text style={styles.rotulo}>Estado:</Text>
+  <TextInput
+  style={styles.campo}
+  placeholder = "Amazonas"
+  />
+
+  <Text style={styles.rotulo}>Senha:</Text>
+  <TextInput
+  style={styles.campo}
+  placeholder="Crie uma senha"
+  secureTextEntry={true}
+  />
+
+  <Text style={styles.rotulo}>Repita a Senha:</Text>
+  <TextInput
+  style={styles.campo}
+  placeholder="Repita a senha"
+  secureTextEntry={true}
+  />
+
+  <TouchableOpacity style={styles.botaoCadastrar}>
+   <Text style={styles.textoBotaoCadastrar}>Cadastrar</Text>
+  </TouchableOpacity>
+
+  <TouchableOpacity style={styles.botaocancelar}>
+    <Text style={styles.textobotaoCancelar}>Cancelar</Text>
+    </TouchableOpacity>
+
+    <TouchableOpacity style={styles.botaolimpar}>
+    <Text style={styles.textobotaolimpar}>Cancelar</Text>
+    </TouchableOpacity>
+    </View>
+  );
+}
+
+const styles = StyleSheet.create({
+  container:{flex: 1, justifyContent: 'center', padding: 25, backgroundColor: '#ffffff',},
+
+  titulo:{fontSize: 22, fontWeight: 'bold', color: '#0f172a',
+  textAlign: 'center', marginBottom: 25,},
+
+  rotulo:{fontSize: 15, fontWeight: 'bold', color: '#334155', marginBottom: 6,},
+
+  campo:{height: 45, borderWidth: 1, borderColor: '#cbd5e1', borderRadius: 8, paddingLeft: 12, fontSize: 15, marginBottom: 14, backgroundColor:'#f8fafc',},
+
+  botaoCadastrar:{backgroundColor: '#16a34a', paddingVertical: 12, borderRadius: 8, alignItems: 'center', marginTop: 10, marginBottom: 10,},
+
+  textoBotaoCadastrar:{color:'#ffffff', fontSize: 16, fontWeight: 'bold',},
+
+ botaocancelar:{backgroundColor:'#f1f5f9', paddingVertical: 12, borderRadius: 8, alignItems: 'center', borderWidth: 1, borderColor: '#cbd5e1',},
+
+ textobotaoCancelar:{color:'#64748b', fontSize: 16, fontWeight: 'bold',},
+
+ botaolimpar:{backgroundColor: '#16a34a', paddingVertical: 12, borderRadius: 8, alignItems: 'center', marginTop: 10, marginBottom: 10,},
+
+textobotaolimpar:{color:'#ffffff', fontSize: 16, fontWeight: 'bold',},
+
+})
