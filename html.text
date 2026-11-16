@@ -73,6 +73,7 @@
         <!--Cards de Indicadores-->
 
         <div class="col-md-4">
+            <!--card 1-->
             <div class="card card-indicador">
                 <div class="card-body">
                     <h6 class="text-secondary">
@@ -81,6 +82,33 @@
 
                     <h2 class="text-primary">
                         120
+                    </h2>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+            <!--card 1-->
+            <div class="card card-indicador">
+                <div class="card-body">
+                    <h6 class="text-secondary">
+                        Cursos
+                    </h6>
+
+                    <h2 class="text-primary">
+                        03
+                    </h2>
+                </div>
+            </div>
+            <div class="col-md-4">
+            <!--card 1-->
+            <div class="card card-indicador">
+                <div class="card-body">
+                    <h6 class="text-secondary">
+                        Turmas
+                    </h6>
+
+                    <h2 class="text-primary">
+                        08
                     </h2>
                 </div>
             </div>
