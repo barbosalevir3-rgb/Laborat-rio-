@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="pt-BR"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="Script.log — aprenda lógica de programação, JavaScript e Portugol no seu ritmo." name="description"/><title>Script.log | Biblioteca</title><link href="style.css" rel="stylesheet"/></head><body><header class="topbar">
+<a aria-label="Script.log, página inicial" class="brand" href="index.html#inicio">
+<span class="brand-mark">&lt;/&gt;</span>
+<span>Script<span>.log</span><small>FOCO • RACIOCÍNIO • PROGRAMAÇÃO</small></span>
+</a>
+<nav aria-label="Navegação principal" class="main-nav"><a href="index.html#inicio">Início</a><a href="aulas.html#trilhas">Aulas</a><a href="desafios.html#desafios">Desafios</a><a aria-current="page" class="active" href="biblioteca.html#biblioteca">Biblioteca</a></nav>
+<a class="profile-link" href="perfil.html#perfil"><span class="avatar">L</span><span>Meu perfil</span></a>
+</header><main><section class="section-wrap content-section" id="biblioteca">
+<div class="section-heading"><div><span class="eyebrow">CONSULTE E REVISE</span><h2>Biblioteca de conteúdos</h2><p>Um lugar para ler, consultar e revisar os conceitos de programação.</p></div><span class="library-total">8 ARTIGOS</span></div>
+<div class="library-intro"><div class="library-mark">⌘</div><div><span class="eyebrow">APRENDA NO SEU RITMO</span><h3>Da primeira variável aos objetos</h3><p>Cada artigo reúne explicação, exemplos em JavaScript e Portugol e uma atividade para fixar.</p></div></div>
+<div class="article-grid">
+<a class="article-card" href="biblioteca.html#artigo-variaveis"><span>01 / FUNDAMENTOS</span><h3>Variáveis</h3><p>Como guardar, nomear e atualizar informações.</p><small>Ler artigo <b>→</b> <i>5 min de leitura</i></small></a>
+<a class="article-card" href="biblioteca.html#artigo-tipos"><span>02 / FUNDAMENTOS</span><h3>Tipos de Dados</h3><p>Entenda textos, números e valores lógicos.</p><small>Ler artigo <b>→</b> <i>6 min de leitura</i></small></a>
+<a class="article-card" href="biblioteca.html#artigo-operadores"><span>03 / FUNDAMENTOS</span><h3>Operadores</h3><p>Calcule, compare e combine condições.</p><small>Ler artigo <b>→</b> <i>6 min de leitura</i></small></a>
+<a class="article-card" href="biblioteca.html#artigo-condicionais"><span>04 / FUNDAMENTOS</span><h3>Condicionais</h3><p>Tome decisões com if, else, se e senao.</p><small>Ler artigo <b>→</b> <i>7 min de leitura</i></small></a>
+<a class="article-card" href="biblioteca.html#artigo-repeticoes"><span>05 / FUNDAMENTOS</span><h3>Repetições</h3><p>Repita instruções sem repetir seu trabalho.</p><small>Ler artigo <b>→</b> <i>7 min de leitura</i></small></a>
+<a class="article-card" href="biblioteca.html#artigo-funcoes"><span>06 / FUNDAMENTOS</span><h3>Funções</h3><p>Organize o raciocínio em blocos reutilizáveis.</p><small>Ler artigo <b>→</b> <i>7 min de leitura</i></small></a>
+<a class="article-card" href="biblioteca.html#artigo-arrays"><span>07 / FUNDAMENTOS</span><h3>Arrays</h3><p>Armazene e percorra listas e vetores.</p><small>Ler artigo <b>→</b> <i>6 min de leitura</i></small></a>
+<a class="article-card" href="biblioteca.html#artigo-objetos"><span>08 / FUNDAMENTOS</span><h3>Objetos</h3><p>Agrupe propriedades e relacione informações.</p><small>Ler artigo <b>→</b> <i>6 min de leitura</i></small></a>
+</div>
+</section><section class="section-wrap article-detail-section">
+<div class="section-heading"><div><span class="eyebrow">LEITURA GUIADA</span><h2>Um conceito por vez</h2><p>Uma prévia dos assuntos da biblioteca.</p></div></div>
+<div class="article-detail" id="artigo-variaveis"><div><span class="eyebrow">ARTIGO 01 / 08</span><h3>Variáveis</h3><p>Variáveis são espaços na memória usados para armazenar valores que podem mudar durante a execução do programa. Pense em uma variável como uma caixa identificada por uma etiqueta: a etiqueta é o nome e o conteúdo é o valor.</p><pre><code>let nome = "Script.log";
+let idade = 18;
+
+console.log(nome);
+console.log(idade);</code></pre></div><aside><b>Para lembrar</b><ul><li>Declarar cria uma variável; atribuir define seu valor.</li><li>O sinal = representa atribuição.</li><li>Prefira nomes que revelem a finalidade da informação.</li></ul></aside></div>
+<div class="article-detail" id="artigo-tipos"><div><span class="eyebrow">ARTIGO 02 / 08</span><h3>Tipos de Dados</h3><p>Strings representam textos, numbers representam números e booleans indicam verdadeiro ou falso. Embora o número 18 e o texto "18" pareçam iguais na tela, são tipos diferentes.</p><pre><code>let nome = "Ana";       // string
+let idade = 18;         // number
+let estudando = true;   // boolean
+
+console.log(typeof idade);</code></pre></div><aside><b>Para lembrar</b><ul><li>Um número entre aspas é um texto.</li><li>Use valores lógicos para representar condições.</li><li>Escolha o tipo de acordo com a finalidade do dado.</li></ul></aside></div>
+<div class="article-detail" id="artigo-operadores"><div><span class="eyebrow">ARTIGO 03 / 08</span><h3>Operadores</h3><p>Operadores aritméticos realizam contas. Operadores de comparação verificam relações entre valores, enquanto operadores lógicos permitem combinar condições.</p><pre><code>let soma = 2 + 3;
+let resto = 8 % 2;
+let maiorDeIdade = 18 &gt;= 18;
+
+console.log(soma, resto, maiorDeIdade);</code></pre></div><aside><b>Para lembrar</b><ul><li>= atribui; === compara em JavaScript.</li><li>% informa o resto de uma divisão.</li><li>Parênteses ajudam a organizar expressões.</li></ul></aside></div>
+<div class="article-detail" id="artigo-condicionais"><div><span class="eyebrow">ARTIGO 04 / 08</span><h3>Condicionais</h3><p>As estruturas if e else permitem que o programa escolha o que executar de acordo com uma condição. Apenas o caminho correspondente ao resultado será executado.</p><pre><code>let idade = 18;
+
+if (idade &gt;= 18) {
+  console.log("Maior de idade");
+} else {
+  console.log("Menor de idade");
+}</code></pre></div><aside><b>Para lembrar</b><ul><li>Uma condição precisa resultar em verdadeiro ou falso.</li><li>Apenas um caminho será executado.</li><li>Teste o limite e os valores próximos.</li></ul></aside></div>
+<div class="article-detail" id="artigo-repeticoes"><div><span class="eyebrow">ARTIGO 05 / 08</span><h3>Repetições</h3><p>Laços repetem um bloco de instruções. No for, defina o início, a condição de parada e a atualização do contador.</p><pre><code>for (let contador = 1; contador &lt;= 5; contador++) {
+  console.log(contador);
+}</code></pre></div><aside><b>Para lembrar</b><ul><li>Identifique início, condição e atualização.</li><li>Garanta que a repetição tenha uma forma de terminar.</li><li>Confira se o valor final deve ser incluído.</li></ul></aside></div>
+<div class="article-detail" id="artigo-funcoes"><div><span class="eyebrow">ARTIGO 06 / 08</span><h3>Funções</h3><p>Funções agrupam instruções reutilizáveis. Elas podem receber parâmetros e devolver um resultado com return.</p><pre><code>function somar(a, b) {
+  return a + b;
+}
+
+let resultado = somar(2, 3);
+console.log(resultado);</code></pre></div><aside><b>Para lembrar</b><ul><li>Parâmetros recebem os dados de entrada.</li><li>O retorno permite usar o resultado em outra expressão.</li><li>Prefira funções com uma responsabilidade clara.</li></ul></aside></div>
+<div class="article-detail" id="artigo-arrays"><div><span class="eyebrow">ARTIGO 07 / 08</span><h3>Arrays</h3><p>Arrays guardam vários valores em uma lista. O primeiro item está no índice 0; length informa a quantidade de itens.</p><pre><code>let notas = [7, 8, 9];
+
+console.log(notas[0]);
+notas.push(10);
+console.log(notas.length);</code></pre></div><aside><b>Para lembrar</b><ul><li>O primeiro índice é 0.</li><li>Quantidade de itens e último índice são diferentes.</li><li>Uma repetição permite percorrer os itens.</li></ul></aside></div>
+<div class="article-detail" id="artigo-objetos"><div><span class="eyebrow">ARTIGO 08 / 08</span><h3>Objetos</h3><p>Objetos reúnem informações relacionadas em pares de chave e valor. Use a notação de ponto para acessar uma propriedade.</p><pre><code>let aluno = {
+  nome: "Ana",
+  idade: 18
+};
+
+console.log(aluno.nome);</code></pre></div><aside><b>Para lembrar</b><ul><li>Objetos JavaScript agrupam pares de chave e valor.</li><li>A notação de ponto consulta uma propriedade.</li><li>Portugol Studio não oferece objetos nativos.</li></ul></aside></div>
+</section></main><footer class="footer"><a class="brand footer-brand" href="index.html#inicio"><span class="brand-mark">&lt;/&gt;</span><span>Script<span>.log</span><small>FOCO • RACIOCÍNIO • PROGRAMAÇÃO</small></span></a><p>Aprender a programar começa por aprender a pensar.</p><span>© 2026 Script.log • Projeto educacional</span></footer></body></html>
