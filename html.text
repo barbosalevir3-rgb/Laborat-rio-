@@ -1,11 +1,12 @@
 
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <!-- Define a codificação de caracteres -->
     <meta charset="UTF-8">
 
-    <!-- Permite que o site se adapte a celulares e tablets -->
+    <!-- Adapta o site para celulares e tablets -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Sistema de Cadastro de Alunos</title>
@@ -31,7 +32,10 @@
             <!-- Botão do menu para dispositivos móveis -->
             <button class="navbar-toggler" type="button"
                 data-bs-toggle="collapse"
-                data-bs-target="#menu">
+                data-bs-target="#menu"
+                aria-controls="menu"
+                aria-expanded="false"
+                aria-label="Abrir menu">
 
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -46,73 +50,95 @@
                             Início
                         </a>
                     </li>
+
                     <li class="nav-item">
                         <a class="nav-link" href="cadastrar.html">
                             Cadastrar Aluno
                         </a>
                     </li>
-                    
+
                 </ul>
 
             </div>
         </div>
-    </nav> <!--Encerra o Menu de navegação-->
+    </nav>
 
-    <!--CONTEÚDO PRINCIPAL DA PÁGINA-->
-
+    <!-- CONTEÚDO PRINCIPAL DA PÁGINA -->
     <main class="container py-4">
-        <div class="d-flex justify-content-between aling-items-center flex-wrap gap-3 mb-4">
+
+        <!-- Título e botão -->
+        <div class="d-flex justify-content-between align-items-center flex-wrap gap-3 mb-4">
+
             <p class="text-secondary mb-0">
-              Gerencimento de estudantes cadastrados.
+                Gerenciamento de estudantes cadastrados.
             </p>
+
+            <a href="cadastrar.html" class="btn btn-primary">
+                + Novo Aluno
+            </a>
+
         </div>
-        <a href="cadastrar.html cl" class= "btn btn-primary">
-            + Novo Aluno
-        </a>
 
-        <!--Cards de Indicadores-->
+        <!-- CARDS DE INDICADORES -->
+        <div class="row g-3">
 
-        <div class="col-md-4">
-            <!--card 1-->
-            <div class="card card-indicador">
-                <div class="card-body">
-                    <h6 class="text-secondary">
-                        Total de Alunos
-                    </h6>
-
-                    <h2 class="text-primary">
-                        120
-                    </h2>
-                </div>
-            </div>
-
+            <!-- Card 1: Total de alunos -->
             <div class="col-md-4">
-            <!--card 1-->
-            <div class="card card-indicador">
-                <div class="card-body">
-                    <h6 class="text-secondary">
-                        Cursos
-                    </h6>
+                <div class="card card-indicador h-100">
+                    <div class="card-body">
 
-                    <h2 class="text-primary">
-                        03
-                    </h2>
+                        <h6 class="text-secondary">
+                            Total de Alunos
+                        </h6>
+
+                        <h2 class="text-primary">
+                            120
+                        </h2>
+
+                    </div>
                 </div>
             </div>
+
+            <!-- Card 2: Cursos -->
             <div class="col-md-4">
-            <!--card 1-->
-            <div class="card card-indicador">
-                <div class="card-body">
-                    <h6 class="text-secondary">
-                        Turmas
-                    </h6>
+                <div class="card card-indicador h-100">
+                    <div class="card-body">
 
-                    <h2 class="text-primary">
-                        08
-                    </h2>
+                        <h6 class="text-secondary">
+                            Cursos
+                        </h6>
+
+                        <h2 class="text-primary">
+                            03
+                        </h2>
+
+                    </div>
                 </div>
             </div>
+
+            <!-- Card 3: Turmas -->
+            <div class="col-md-4">
+                <div class="card card-indicador h-100">
+                    <div class="card-body">
+
+                        <h6 class="text-secondary">
+                            Turmas
+                        </h6>
+
+                        <h2 class="text-primary">
+                            08
+                        </h2>
+
+                    </div>
+                </div>
+            </div>
+
         </div>
+
     </main>
+
+    <!-- JavaScript do Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
 </body>
 </html>
