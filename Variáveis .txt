@@ -1,0 +1,95 @@
+﻿Variáveis JavaScript
+Criação dos conteúdos por Levir Abreu Barbosa, estudante do curso Técnico em TI. 
+
+
+Início 
+
+
+Olá, estudante! Seja bem-vindo ao estudo de variáveis. Não se preocupe se você nunca programou antes: vamos começar do zero. Na programação, quase tudo depende das variáveis para guardar informações dentro de um programa. 
+
+
+– O que é Variável? 
+
+
+Imagine que uma variável é como uma caixa com uma etiqueta guardada na memória do seu celular ou computador. Você coloca uma etiqueta na caixa (por exemplo, nome) e guarda uma informação lá dentro. 
+No JavaScript, existem três palavras para criar essas caixas: let, const e var. Vamos começar aprendendo a mais usada no dia a dia: o let.
+
+
+Entendendo o let 
+
+
+O let cria uma "caixa" que permite trocar o que está dentro dela sempre que você precisar.
+Como isso funciona? Imagine um formulário de cadastro na internet. Cada pessoa que entra no site digita um nome e um endereço diferente, certo? O programa usa as mesmas variáveis, mas o valor dentro delas muda a cada pessoa.
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Nesse código, usamos o comando prompt() para exibir uma caixa na tela e permitir que o usuário digite as informações, que ficam guardadas dentro de cada variável
+
+
+Entendendo o var
+
+
+O var foi a primeira forma criada para declarar variáveis no JavaScript. Hoje em dia, ele quase não é mais usado porque não respeita muito bem os limites do código, é como uma caixa sem tampa que acaba espalhando seu conteúdo por partes do programa onde não deveria, o que facilita a criação de erros (bugs).
+Você ainda vai encontrar o var em códigos mais antigos ou materiais desatualizados, mas nos seus projetos atuais, dê sempre preferência ao let e ao const (inclusive quando for trabalhar com listas e vetores).
+
+
+Entendendo o const 
+
+
+O const (abreviação de constante) é usado quando criamos uma variável cujo valor não vai mudar ao longo do programa. Na nossa analogia, imagine uma caixa lacrada: depois que você coloca uma informação dentro dela e fecha, não é possível trocar o que está lá dentro.
+Um ótimo exemplo do dia a dia é o CPF ou a data de nascimento de uma pessoa. Esses dados são permanentes e não mudam durante o uso de um sistema. Se você tentar alterar o valor de um const depois de criado, o próprio JavaScript avisa que há um erro.
+  
+
+
+
+
+
+
+
+
+
+
+
+O código acima mostra perfeitamente como funciona o const: não existe mudança de valores, ele continua sendo o mesmo e permanecerá assim.
+
+
+Detalhes vistos nos códigos 
+
+
+ = (Sinal de Atribuição): Na programação, um sinal de igual sozinho não significa "comparação", e sim "recebe". Quando escrevemos let nome = "Ana", estamos dizendo: a variável nome recebe o valor "Ana".
+
+
+“” (Aspas): Servem para indicar ao JavaScript que o conteúdo ali dentro é um texto (chamado de string). Tudo o que for frase, palavra ou mensagem na tela precisa estar entre aspas duplas "" ou simples ''.
+
+
+() (Parênteses): Funcionam como o espaço onde colocamos as informações que um comando precisa para trabalhar. Por exemplo, dentro dos parênteses do prompt(), escrevemos a pergunta que vai aparecer para o usuário.
+
+
+ prompt(): É o comando que abre uma caixinha na tela do navegador para o usuário digitar algo. Atenção: tudo o que o prompt() captura chega como texto, mesmo que a pessoa digite números.
+
+
+parseInt: Converte um texto em um número inteiro (sem vírgula, como 10, 25, 2026). Usamos muito junto com o prompt() quando precisamos fazer contas com a idade ou quantidade de itens:
+
+
+  
+
+
+
+
+
+parseFloat: Converte um texto em um número decimal (com ponto/vírgula, como 1.75 ou 19.90). É ideal para guardar preços, peso ou altura:
