@@ -1,0 +1,39 @@
+import React, {useState} from 'react';
+import {StyleSheet, Text, View, TouchableOpacity} from 'react-native';
+
+export default function App(){
+  const [volume, setVolume] = useState(50);
+
+  return(
+    <View style={styles.container}>
+     <Text style={styles.titulo}>Volume: {volume}%</Text>
+    <View style={styles.linha}>
+    <TouchableOpacity
+    style={styles.botao}
+    onPress={() => volume > 0 && setVolume(volume - 10)}
+    >
+    <Text style={styles.textBotao}> - Diminuir</Text>
+    </TouchableOpacity>
+
+    <TouchableOpacity
+    style={styles.botao}
+    onPress={() => volume > 0 && setVolume(volume - 10)}
+    >
+    <Text style={styles.textBotao}>+ Aumentar</Text>
+    </TouchableOpacity>
+  </View>
+</View>
+  );
+}
+
+const styles = StyleSheet.create({
+  container:{flex: 1, justifyContent: 'center', alignItems: 'center', backgroundColor: '#fff'},
+
+  titulo: {fontSize: 24, fontWeight: 'bold', marginBottom: 25, color: '#0f172a'},
+
+  linha: {flexDirection: 'row', gap: 15},
+
+  botao: {backgroundColor: '#2563eb', paddingVertical: 12, paddingHorizontal: 20, borderRadius: 8,},
+
+  textBotao:{color: '#fff', fontWeight:'bold', fontSize: 15},
+})
